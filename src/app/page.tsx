@@ -1,9 +1,9 @@
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
 
 export default function Home() {
   return (
     <Box>
-      asd
+      <Button color={"primary"}>asdasd</Button>
     </Box>
-  )
+  );
 }
