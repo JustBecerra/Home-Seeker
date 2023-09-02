@@ -12,12 +12,12 @@ export default function TopBar() {
           <Typography sx={{color: 'Primary.100', m: '0.75rem', textTransform: 'none'}}>button 2</Typography>
         </Button>
       </Box>
-      <Typography sx={{color: 'Primary.100', fontSize: '1.5rem', textTransform: 'none'}}>
+      <Typography sx={{color: 'Primary.100', fontSize: '1.5rem', textTransform: 'none', display:'flex', alignSelf:'center', m:'auto'}}>
         Home Seeker
       </Typography>
-      <Button disableRipple sx={{backgroundColor: 'Primary.100'}}>
-        <Typography sx={{color: 'Primary.light',p: '0.75rem', fontSize: '1rem', textTransform: 'none'}}>
-          Contact the creator!
+      <Button sx={{backgroundColor: 'Primary.100', px: '1rem', m: '0.75rem', marginRight: '1rem',height: '3rem', borderRadius: '1.5rem'}}>
+        <Typography sx={{color: 'Primary.light', fontSize: '1rem', textTransform: 'none'}}>
+          Contact the creator
         </Typography>
       </Button>
     </AppBar>
