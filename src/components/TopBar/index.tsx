@@ -1,10 +1,10 @@
 import React from "react";
 import { Box, AppBar, Button, Typography } from "@mui/material";
 
-export default function TopBar() {
+export const TopBar = () => {
   return (
     <AppBar position="fixed" variant="elevation" sx={{backgroundColor: 'Primary.light', display:'flex', flexDirection:'row', justifyContent:'space-between', alignItems: 'center'}}>
-      <Box sx={{width: 'auto'}}>
+      <Box>
         <Button  variant="text" sx={{m: '0.75rem', height: '3rem'}}>
           <Typography sx={{color: 'Primary.100', textTransform: 'none'}}>button 1</Typography>
         </Button>
