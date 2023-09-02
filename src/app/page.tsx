@@ -1,9 +1,10 @@
-import { Box, Button } from "@mui/material";
+import TopBar from "@/components/TopBar";
+import { Box } from "@mui/material";
 
 export default function Home() {
   return (
     <Box>
-      <Button color={"primary"}>asdasd</Button>
+      <TopBar />
     </Box>
   );
 }
