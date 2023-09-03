@@ -1,17 +1,17 @@
+"use client"
 import React from "react";
-import { Box, AppBar, Button, Typography } from "@mui/material";
+import { AppBar, Button, Typography, Autocomplete, TextField } from "@mui/material";
 
 export const TopBar = () => {
+  
   return (
     <AppBar position="fixed" variant="elevation" sx={{backgroundColor: 'Primary.light', display:'flex', flexDirection:'row', justifyContent:'space-between', alignItems: 'center'}}>
-      <Box>
-        <Button  variant="text" sx={{m: '0.75rem', height: '3rem'}}>
-          <Typography sx={{color: 'Primary.100', textTransform: 'none'}}>button 1</Typography>
-        </Button>
-        <Button  variant="text" sx={{m: '0.75rem', height: '3rem'}}>
-          <Typography sx={{color: 'Primary.100', m: '0.75rem', textTransform: 'none'}}>button 2</Typography>
-        </Button>
-      </Box>
+      <Autocomplete 
+        sx={{m: '0.75rem', marginLeft: '1rem', width:'8rem'}}
+        options={[]}
+        freeSolo
+        renderInput={(params) => <TextField {...params} label="Search..." sx={{borderRadius: '1.5rem'}} />}
+      />
       <Typography sx={{color: 'Primary.100', fontSize: '1.5rem', textTransform: 'none', display:'flex', alignSelf:'center', m:'auto'}}>
         Home Seeker
       </Typography>
